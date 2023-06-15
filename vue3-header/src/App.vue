@@ -1,9 +1,9 @@
 <script setup>
-import VueThreeHeader from './components/VueThreeHeader.vue'
+import AppHeader from './components/AppHeader.vue'
 </script>
 
 <template>
-  <VueThreeHeader msg="Vite + Vue" />
+  <AppHeader msg="Vite + Vue" />
 </template>
 
 <style scoped>
