@@ -6,6 +6,8 @@ import AppHeader from './components/AppHeader.vue'
   <AppHeader msg="Vite + Vue" />
 </template>
 
-<style scoped>
-
+<style lang="scss">
+@import './_variables.scss';
+@import './_mixins.scss';
+@import './generals.scss';
 </style>
