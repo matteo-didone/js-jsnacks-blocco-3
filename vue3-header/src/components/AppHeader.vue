@@ -9,9 +9,11 @@ export default {
     data() {
         return {
             navbarLinks: [
+                { name: 'Gino', link: '#' },
+                { name: 'Ciao', link: '#' },
                 { name: 'Home', link: '#' },
-                { name: 'About', link: '#' },
-                { name: 'Contacts', link: '#' },
+                { name: 'Contatti', link: '#' },
+                { name: 'Ginetta', link: '#' },
             ],
         };
     },
@@ -37,4 +39,16 @@ export default {
 </template>
 
 
-<style scoped></style>
+<style scoped>
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 10px;
+    font-size: x-large;
+}
+
+</style>
