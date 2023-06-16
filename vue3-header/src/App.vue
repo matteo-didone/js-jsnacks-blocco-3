@@ -1,13 +1,20 @@
-<script setup>
-import AppHeader from './components/AppHeader.vue'
+<script>
+
+import AppHeader from './components/AppHeader.vue';
+
+
+export default {
+  name: 'App',
+  components: {
+    AppHeader,
+  },
+}
 </script>
 
 <template>
-  <AppHeader msg="Vite + Vue" />
+  <AppHeader />
 </template>
 
 <style lang="scss">
-@import './_variables.scss';
-@import './_mixins.scss';
-@import './generals.scss';
+@import './styles/general.scss';
 </style>

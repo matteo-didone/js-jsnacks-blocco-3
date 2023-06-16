@@ -1,3 +1,15 @@
+<script>
+export default {
+    name: 'AppHeader',
+    data() {
+        return {
+
+        }
+    },
+}
+</script>
+
+
 <script setup>
 import { ref } from 'vue'
 
@@ -7,8 +19,8 @@ defineProps({
 
 </script>
 
-<template>
-    <h1>{{ msg }}</h1>
+<template lang="it">
+    
 </template>
 
 <style scoped>

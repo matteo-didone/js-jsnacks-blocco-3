@@ -1,6 +1,35 @@
-@import './_variables.scss';
-@import './_mixins.scss';
+// Scoped styles
+@use '/Users/matteodidone/VS Code Projects/vite-comics/vite-comics/src/styles/partials/_mixins.scss' as *; 
+@use '/Users/matteodidone/VS Code Projects/vite-comics/vite-comics/src/styles/partials/_variables.scss' as *;
 
-h1 {
-    color: red;
+// Importing the fonts
+@import url(//db.onlinewebfonts.com/c/d602bf6498a65d9595ca30c04eadda32?family=TanseekModernProArabic-Book);
+
+// Resetting of the browser default styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+
+.m-auto{
+    margin: auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.dc-blue
+{
+    color: $dc-blue;
 }
