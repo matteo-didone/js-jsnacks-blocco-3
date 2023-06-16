@@ -1,28 +1,40 @@
 <script>
+import NavLink from './NavLink.vue';
+
 export default {
     name: 'AppHeader',
+    components: {
+        NavLink,
+    },
     data() {
         return {
-
-        }
+            navbarLinks: [
+                { name: 'Home', link: '#' },
+                { name: 'About', link: '#' },
+                { name: 'Contacts', link: '#' },
+            ],
+        };
     },
 }
 </script>
 
 
+
 <script setup>
-import { ref } from 'vue'
-
-defineProps({
-    msg: String,
-})
-
+    import NavLink from './NavLink.vue';
 </script>
 
-<template lang="it">
-    
+<template>
+    <header>
+        <nav>
+            <ul>
+                <li v-for="link in navbarLinks" :key="link.name">
+                    <NavLink :name="link.name" :link="link.link" />
+                </li>
+            </ul>
+        </nav>
+    </header>
 </template>
 
-<style scoped>
 
-</style>
+<style scoped></style>
